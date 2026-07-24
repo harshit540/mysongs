@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Songs Player</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player-card">
+  <div class="art-wrap">
+    <img id="cover" src="default-cover.png" alt="Album Art">
+  </div>
+
+  <h1 id="title">Song Title</h1>
+  <p id="artist">Artist Name</p>
+  <p id="album" class="album"></p>
+
+  <audio id="audio" controls></audio>
+
+  <p id="status" class="status"></p>
+
+  <div class="playlist-header">Playlist</div>
+  <ul id="playlist"></ul>
+</div>
+
+<!-- jsmediatags library metadata (title, artist, album, cover) read karva mate -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+}
+
+.player-card {
+  background: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 340px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+.art-wrap {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.art-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+#artist {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 3px;
+}
+
+.album {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.status {
+  font-size: 12px;
+  color: #ff9f9f;
+  margin-top: 8px;
+  min-height: 14px;
+}
+
+.playlist-header {
+  margin-top: 25px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #aaa;
+  text-align: left;
+}
+
+#playlist {
+  list-style: none;
+  max-height: 180px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+#playlist li {
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  background: #ffffff08;
+  cursor: pointer;
+  font-size: 13px;
+  color: #ddd;
+  transition: background 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#playlist li:hover {
+  background: #ffffff18;
+}
+
+#playlist li.active {
+  background: #6c5ce7;
+  color: #fff;
+}
