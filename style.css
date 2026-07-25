@@ -68,6 +68,43 @@ audio {
   min-height: 14px;
 }
 
+.category-header {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #aaa;
+  text-align: left;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  text-align: left;
+}
+
+.category-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 20px;
+  background: #ffffff10;
+  color: #ddd;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.category-btn:hover {
+  background: #ffffff22;
+}
+
+.category-btn.active {
+  background: #6c5ce7;
+  color: #fff;
+}
+
 .playlist-header {
   margin-top: 25px;
   margin-bottom: 8px;
